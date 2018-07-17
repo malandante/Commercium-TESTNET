@@ -3355,10 +3355,10 @@ static bool CheckIndexAgainstCheckpoint(const CBlockIndex* pindexPrev, CValidati
     return true;
 }
 
-bool ContextualCheckBlockHeader(const CBlockHeader &block,
-                                CValidationState &state,
-                                const Consensus::Params &consensusParams,
-                                const CBlockIndex *pindexPrev,
+bool ContextualCheckBlockHeader(const CBlockHeader& block,
+                                CValidationState& state,
+                                const Consensus::Params& consensusParams,
+                                const CBlockIndex* pindexPrev,
                                 int64_t nAdjustedTime) {
     const int nHeight = pindexPrev == nullptr ? 0 : pindexPrev->nHeight + 1;
 

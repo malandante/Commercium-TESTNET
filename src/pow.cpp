@@ -42,7 +42,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 	return CalculateNextWorkRequired(bnAvg, pindexLast->GetMedianTimePast(), pindexFirst->GetMedianTimePast(), params);
 }
 
-unsigned int CalculateNextWorkRequired(arith_uint256 bnAvg, int64_t lastBlockTime, int64_t firstBlockTime, const Consensus::Params &params)
+unsigned int CalculateNextWorkRequired(arith_uint256 bnAvg, int64_t lastBlockTime, int64_t firstBlockTime, const Consensus::Params& params)
 {
 	// limit adjustment
 	int64_t actualTimeSpan = lastBlockTime - firstBlockTime;

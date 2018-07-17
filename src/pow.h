@@ -19,7 +19,7 @@ class arith_uint256;
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast,
 								 const CBlockHeader *pblock,
-								 const Consensus::Params &);
+								 const Consensus::Params&);
 unsigned int CalculateNextWorkRequired(arith_uint256 bnAvg,
                                        int64_t firstBlockTime,
 									   int64_t lastBlockTime,
