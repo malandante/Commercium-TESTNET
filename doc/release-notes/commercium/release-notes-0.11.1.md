@@ -30,7 +30,7 @@ Italian, Catalan, Chinese, Danish, Finnish, Swedish, Czech, Turkish and Bavarian
 
 Thanks to who contributed to this release, at least:
 
-- eduffield
+- ecommerciiield
 - Vertoe
 - UdjinM6
 - Holger Schinzel

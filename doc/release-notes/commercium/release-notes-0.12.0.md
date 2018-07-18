@@ -69,7 +69,7 @@ Credits
 
 Thanks to who contributed to this release, at least:
 
-eduffield  
+ecommerciiield  
 UdjinM6  
 Crowning  
 moli  

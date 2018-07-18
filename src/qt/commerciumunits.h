@@ -60,7 +60,7 @@ public:
         COMMERCIUM,
         mCOMMERCIUM,
         uCOMMERCIUM,
-        duffs
+        commercii
     };
 
     enum SeparatorStyle

@@ -22,7 +22,7 @@ QList<CommerciumUnits::Unit> CommerciumUnits::availableUnits()
     unitlist.append(COMMERCIUM);
     unitlist.append(mCOMMERCIUM);
     unitlist.append(uCOMMERCIUM);
-    unitlist.append(duffs);
+    unitlist.append(commercii);
     return unitlist;
 }
 
@@ -33,7 +33,7 @@ bool CommerciumUnits::valid(int unit)
     case COMMERCIUM:
     case mCOMMERCIUM:
     case uCOMMERCIUM:
-    case duffs:
+    case commercii:
         return true;
     default:
         return false;
@@ -49,7 +49,7 @@ QString CommerciumUnits::name(int unit)
             case COMMERCIUM: return QString("COMMERCIUM");
             case mCOMMERCIUM: return QString("mCOMMERCIUM");
             case uCOMMERCIUM: return QString::fromUtf8("μCOMMERCIUM");
-            case duffs: return QString("duffs");
+            case commercii: return QString("commercii");
             default: return QString("???");
         }
     }
@@ -60,7 +60,7 @@ QString CommerciumUnits::name(int unit)
             case COMMERCIUM: return QString("tCOMMERCIUM");
             case mCOMMERCIUM: return QString("mtCOMMERCIUM");
             case uCOMMERCIUM: return QString::fromUtf8("μtCOMMERCIUM");
-            case duffs: return QString("tduffs");
+            case commercii: return QString("tcommercii");
             default: return QString("???");
         }
     }
@@ -75,7 +75,7 @@ QString CommerciumUnits::description(int unit)
             case COMMERCIUM: return QString("Commercium");
             case mCOMMERCIUM: return QString("Milli-Commercium (1 / 1" THIN_SP_UTF8 "000)");
             case uCOMMERCIUM: return QString("Micro-Commercium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Commercium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case commercii: return QString("Ten Nano-Commercium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -86,7 +86,7 @@ QString CommerciumUnits::description(int unit)
             case COMMERCIUM: return QString("TestCommerciums");
             case mCOMMERCIUM: return QString("Milli-TestCommercium (1 / 1" THIN_SP_UTF8 "000)");
             case uCOMMERCIUM: return QString("Micro-TestCommercium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestCommercium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case commercii: return QString("Ten Nano-TestCommercium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -99,7 +99,7 @@ qint64 CommerciumUnits::factor(int unit)
     case COMMERCIUM:  return 100000000;
     case mCOMMERCIUM: return 100000;
     case uCOMMERCIUM: return 100;
-    case duffs: return 1;
+    case commercii: return 1;
     default:   return 100000000;
     }
 }
@@ -111,7 +111,7 @@ int CommerciumUnits::decimals(int unit)
     case COMMERCIUM: return 8;
     case mCOMMERCIUM: return 5;
     case uCOMMERCIUM: return 2;
-    case duffs: return 0;
+    case commercii: return 0;
     default: return 0;
     }
 }
